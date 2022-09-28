@@ -35,7 +35,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
 }
 
 nav>ul {
@@ -116,6 +116,11 @@ footer p {
 
 main p {
     margin-bottom: 16px;
+}
+div.card{
+    border-style: solid;
+    padding: 10px;
+    justify-content: center;
 }
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
