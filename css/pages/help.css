@@ -1,0 +1,22 @@
+input#texto{
+    width: 265px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+input#boton{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: 0px solid rgba(0, 0, 0, 0.497);
+    color: rgb(255, 255, 255);
+    background-color: #00594c;
+}
+section{
+    text-align: left;
+}
+
+section label{
+    text-align: left;
+}
