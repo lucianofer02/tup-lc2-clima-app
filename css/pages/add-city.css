@@ -9,3 +9,27 @@ input#texto{
     margin-top: 10px;
     border-radius: 5px;
 }
+
+.success, .warning, .error{
+    border: 5px solid;
+    margin: 20px 30% 20px 30%;
+    padding:15px 10px 15px 10px;
+
+    font-size:13px;
+    text-align:center;
+    width:auto;
+    border-radius: 4mm;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+
+}
+.success {
+    background-color: #28a745;
+}
+.warning {
+    background-color: #ffc107;
+
+}
+.error {
+    background-color: #dc3545; 
+}
