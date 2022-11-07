@@ -29,18 +29,23 @@
     </header>
     <main>
         <h2>Ayuda Clima App v.1.0</h2>
-        <p>Esta App te permite consultar el clima de  una ciudad en particular utilizando la API de <a href="https://openweathermap.org/api" >OpenWeatherMap</a>.</p> 
-        <p>Para poder consultar el clima, primero deberá <a href="./add-city.html">agregar una ciudad</a> y luego seleccionar la Ciudad en cuestión desde la pagina <a href="./index.html">Clima</a>.</p>
+        <div id="info">
+            <p>Esta App te permite consultar el clima de  una ciudad en particular utilizando la API de <a href="https://openweathermap.org/api" >OpenWeatherMap</a>.</p>  
+            <p>Para poder consultar el clima, primero deberá <a href="./add-city.html">agregar una ciudad</a> y luego seleccionar la Ciudad en cuestión desde la pagina <a href="./index.html">Clima</a>.</p>
+        </div>
         <section>
             <form action="">
                 <label for="input">Nombre: </label><br>
-                <input type="text" class="texto"> <br>
+                <input type="text" class="texto" name="nombre" id="nombre">
+                <br>
                 <label for="input">Email: </label><br>
-                <input type="email" class="texto"> <br>
+                <input type="email" class="texto" name="email" id="email">
+                <br>
                 <label for="input">Mensaje: </label><br>
-                <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                <button>Limpiar</button>
-                <button>Enviar</button>
+                <textarea id="" class="mensaje" name="mensaje" itemid="mensaje"cols=30 rows=10></textarea>
+                <br>
+                <input type="button" value="Limpiar" class="boton" name="limpiar" id="limpiar">
+                <input type="button" value="Enviar" class="boton" name="enviar" id="enviar">
             </form>
         </section>
     </main>

@@ -7,8 +7,8 @@
     <title>TUP LC2 - TP Integrador</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="./css/pages/add-city.css">
-    <script src="js/common.js" defer></script>
-    <script src="./js/pages/add-city.js" defer></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/pages/add-city.js"></script>
 </head>
 <body>
     <header>
@@ -30,16 +30,16 @@
     <main>
         <h2>Agregar Ciudad</h2>
         <section>
-            <form action="" class="ingresar">
-                <label for="input" class="label">Ingrese ciudad a agragar:</label><br>
-                <input type="text" id="texto" ><br>
-                <button class="buttom">Agregar</button>
+            <form action="">
+                <label for="ciudad">Ingrese ciudad a agregar:</label><br>
+                <input class="texto" type="text" name="ciudad" id="ciudad" required><br>
+                <input type="button" value="Agregar" class="boton" id="agregar_ciud" onclick="obtenerCiudad()">
             </form>
            
         </section>
-        <div class="success"><b>Ciudad agregada con exito.</b></div>
-        <div class="error"><b>Error: la ciudad ingresada no se encuentra en la API o se produjo un error al consultar.</b></div>
-        <div class="warning"><b>La ciudad ingresada ya se encuentra almacenada.</b></div>
+        <div id="success" class="advert" style="display: none;"><b>Ciudad agregada con exito</b></div>
+        <div id="error" class="advert" style="display: none;"><b>Error: la ciudad ingresada no se encuentra en la API o se produjo un error al consultar</b></div>
+        <div id="warning" class="advert" style="display: none;"><b>La ciudad ingresada ya se encuentra almacenada</b></div>
     </main>
 
     <footer>

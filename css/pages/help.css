@@ -1,10 +1,10 @@
-input#texto{
+input.texto{
     width: 265px;
-    height: 30px;
-    border-radius: 5px;
+    height: 25px;
+    border-radius: 10px;
 }
 
-input#boton{
+input.boton{
     font-size: 15px;
     font-weight: bold;
     padding: 6px 15px;
@@ -19,4 +19,9 @@ section{
 
 section label{
     text-align: left;
+}
+
+div#info{
+    text-align: left;
+    padding-left: 300px;
 }

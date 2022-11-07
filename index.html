@@ -7,7 +7,8 @@
     <title>TUP LC2 - TP Integrador</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="./css/pages/index.css">
-    <script src="js/common.js" defer></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/pages/index.js"></script>
 </head>
 <body>
     <header>
@@ -27,29 +28,28 @@
         </nav>
     </header>
     <main>
-        <h2>Clima Ahora</h2>
+        <h2>El Clima Ahora</h2>
         <section id="form-city-list">
-            <form action="" id="formulario">
-                
-                <select name="" id="seleccion">
-                    <option value="">Seleccionar ciudad</option>
-                    <option value="Rosario">Rosario</option>
-                    <option value="Arroyo Seco">Arroyo Seco</option>
+            <form action="" id="form-ciudades">
+                <select name="ciudades" id="ciudades"  required class="selec_ciud" onclick="noElements()">
+                    <option value="" disabled selected>Seleccionar Ciudad</option>
                 </select>
-                <button>Consultar</button>
+                <input type="button" value="Consultar" name="boton" id="consultar" class="boton" onclick="llamarAPI()">
             </form>
         </section>
         <section id="section-weather-result">
-            <div class="card">
-                <h3>Ciudad de Arroyo Seco</h3><br>
-                <img width="150px" src="https://clipartix.com/wp-content/uploads/2017/06/Sun-clip-art-free-clipart-images-4.jpg" alt="sol">
-                <p>Temp: 22°</p>
-                <p>Sensación térmica: 24°</p>
-                <p>Humedad: 20%</p>
-                <p>Soleado</p>
+            <div id="card" style="display: none;">
+                <h3 id="city"></h3>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+                <p id="temperatura"></p>
+                <p id="sensacion"></p>
+                <p id="humedad"></p>
+                <p id="velocidad"></p>
+                <p id="presion"></p>
             </div>
-        </section>
-        </main>
+        </section> 
+        <div id="errorNo" class="advert" style="display: none;"><b>Error: no hay ciuades agregadas</b></div>
+    </main>
 
     <footer>
         <p>Desarrollado con ❤ - LC2</p>
